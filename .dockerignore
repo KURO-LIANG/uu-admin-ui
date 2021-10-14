@@ -1,0 +1,9 @@
+node_modules/
+file/
+public/
+src/
+.gitignore
+.idea
+package.json
+package-lock.json
+vite.config.js
