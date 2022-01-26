@@ -49,31 +49,4 @@ export default {
             ]
         }
     ],
-
-    //空调模式
-    airModel:[
-        {value:'1',label:'自动'},
-        {value:'2',label:'制冷'},
-        {value:'3',label:'除湿'},
-        {value:'4',label:'送风'},
-        {value:'5',label:'制热'},
-    ],
-    //空调风速
-    windSpeed:[
-        {value:'1',label:'自动'},
-        {value:'2',label:'小档'},
-        {value:'3',label:'中档'},
-        {value:'4',label:'大档'},
-    ],
-    //空调风向
-    windDirection:[
-        {value:'0',label:'手动'},
-        {value:'1',label:'自动'},
-    ],
-    //手动风向
-    manualWindDirection:[
-        {value:'1',label:'1档'},
-        {value:'2',label:'2档'},
-        {value:'3',label:'3档'},
-    ]
 }

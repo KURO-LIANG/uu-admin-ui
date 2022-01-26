@@ -14,11 +14,7 @@
                               placeholder="更新版本"></el-input>
                 </el-form-item>
                 <el-form-item label="更新内容">
-                    <div style="line-height: 1.5">
-                        <ckeditor :editor="data.editor" v-model="dataForm.content"
-                                  :config="data.editorConfig" @ready="onReady"></ckeditor>
-                    </div>
-
+                    <ui-editor v-model="dataForm.content"></ui-editor>
                 </el-form-item>
 
                 <el-form-item>
@@ -40,13 +36,12 @@
     import {useRoute, useRouter} from 'vue-router'
     import request from "../../../utils/request";
     import PageHeader from "../../../components/PageHeader.vue"
-    import CKEditor from "@ckeditor/ckeditor5-vue";
-    import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+    import UiEditor from "../../../components/ui/ui-editor.vue";
     import UploadAdapter from "../../../utils/UploadAdapter";
 
 export default defineComponent({
     components: {
-        ckeditor: CKEditor.component,
+        UiEditor,
         PageHeader
     },
     setup() {

@@ -7,9 +7,17 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^28.0.0",
-    "@ckeditor/ckeditor5-build-decoupled-document": "^28.0.0",
+    "@ckeditor/ckeditor5-alignment": "^31.1.0",
+    "@ckeditor/ckeditor5-build-decoupled-document": "^31.1.0",
+    "@ckeditor/ckeditor5-dev-utils": "^28.0.0",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^28.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^31.1.0",
+    "@ckeditor/ckeditor5-font": "^31.1.0",
+    "@ckeditor/ckeditor5-language": "^31.1.0",
+    "@ckeditor/ckeditor5-remove-format": "^31.1.0",
+    "@ckeditor/ckeditor5-theme-lark": "^31.1.0",
     "@ckeditor/ckeditor5-vue": "^2.0.1",
+    "@vitejs/plugin-vue": "^1.9.3",
     "axios": "^0.22.0",
     "echarts": "^5.1.2",
     "element-plus": "^1.1.0-beta.19",
@@ -20,7 +28,6 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.9.3",
     "@vue/compiler-sfc": "^3.2.20",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
