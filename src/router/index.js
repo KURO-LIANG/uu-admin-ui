@@ -49,6 +49,7 @@ router.beforeEach(async (to, form, next) => {
         try {
             const res = await request({
                 method: 'GET',
+                // url: '/uu-admin/sys/menu/nav'
                 url: '/admin-server/sys/menu/nav'
             })
 

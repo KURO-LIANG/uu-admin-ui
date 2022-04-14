@@ -2,6 +2,7 @@ import axios from "axios"
 import router from '../router'
 import store from '../store'
 import storage from './storage'
+// const ctx = 'lsbdb'
 
 const instance = axios.create({
     withCredentials: false,
@@ -62,7 +63,6 @@ export default async function (options) {
         result = await instance(options)
     } catch (e) {
         throw new Error('连接服务器失败')
-
     }
 
     const index = options.codes.indexOf(result.code)

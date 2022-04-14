@@ -41,7 +41,7 @@
                         </template>
                         <template #suffix>
                             <div class="icon-box">
-                                <svg-icon @click="showPwd" :icon-class="[pwdType==='text'?'eye':'eye-close']"
+                                <svg-icon @click="showPwd" :icon-class="pwdType==='text'?'eye':'eye-close'"
                                           class="color-main"></svg-icon>
                             </div>
                         </template>
@@ -120,6 +120,7 @@ export default defineComponent({
         // 获取验证码
         const getCaptcha = () => {
             dataForm.uuid = getUUID();
+            // captchaPath.value = import.meta.env.VITE_API_URL + `/uu-admin/captcha.jpg?uuid=${dataForm.uuid}`
             captchaPath.value = import.meta.env.VITE_API_URL + `/admin-server/captcha.jpg?uuid=${dataForm.uuid}`
         }
 
@@ -139,6 +140,7 @@ export default defineComponent({
                 if (valid) {
                     proxy.$axios({
                         method: 'POST',
+                        // url: '/uu-admin/sys/login',
                         url: '/admin-server/sys/login',
                         data: dataForm
                     }).then(res => {

@@ -11,6 +11,15 @@ export default ({mode}) => {
 
     return defineConfig({
         publicDir: process.env.VITE_PUBLIC_DIR,
+        // alias: {
+        //     // 键必须以斜线开始和结束
+        //     '/@/': path.resolve(__dirname, './src')
+        //     // '/@components/': path.resolve(__dirname, './src/components')
+        // },
+        // proxy: {
+        //     // 如果是 /lsbdb 打头，则访问地址如下
+        //     '/lsbdb': process.env.VITE_PUBLIC_DIR,
+        // },
         plugins: [
             vue(),
             viteSvgIcons({
